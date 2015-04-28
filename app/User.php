@@ -1,4 +1,4 @@
-<?php namespace App;
+<?php namespace Pop;
 
 use Illuminate\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;

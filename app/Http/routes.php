@@ -11,11 +11,8 @@
 |
 */
 
-Route::get('/', 'WelcomeController@index');
 
-Route::get('home', 'HomeController@index');
+Route::group(['prefix' => 'api/v1'], function() {
 
-Route::controllers([
-	'auth' => 'Auth\AuthController',
-	'password' => 'Auth\PasswordController',
-]);
+});
+
