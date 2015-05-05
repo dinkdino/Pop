@@ -1,4 +1,4 @@
-<?php namespace Pop\Http\Controllers;
+<?php namespace Pop\Http\Controllers\Api;
 
 use Illuminate\Http\Request;
 use Illuminate\Contracts\Auth\Guard;
@@ -52,7 +52,7 @@ class AuthController extends ApiController {
 
         $user = $this->registrar->create($request->all());
 
-        return $this->transformer->transform($user);
+        return $this->setStatusCode(201)->respondWithSuccess("Account created successfully", ["user" => $this->transformer->transform($user)]);
     }
 
     /**

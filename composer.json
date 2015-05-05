@@ -5,11 +5,19 @@
 	"license": "MIT",
 	"type": "project",
 	"require": {
-		"laravel/framework": "5.0.*"
+		"laravel/framework": "5.0.*",
+		"janhenkgerritsen/codeception-laravel5": "~1.0"
 	},
 	"require-dev": {
 		"phpunit/phpunit": "~4.0",
-		"phpspec/phpspec": "~2.1"
+		"phpspec/phpspec": "~2.1",
+		"fzaninotto/faker": "dev-master",
+		"behat/behat": "~3.0",
+		"behat/mink": "~1.6",
+		"behat/mink-extension": "~2.0",
+        "behat/web-api-extension": "dev-master",
+        "deminy/behat-rest-testing": "@dev",
+		"laracasts/behat-laravel-extension": "~1.0"
 	},
 	"autoload": {
 		"classmap": [

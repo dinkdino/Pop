@@ -1,6 +1,7 @@
-<?php namespace Pop\Http\Controllers;
+<?php namespace Pop\Http\Controllers\Api;
 
 use Symfony\Component\HttpFoundation\Response;
+use Pop\Http\Controllers\Controller;
 
 class ApiController extends Controller {
 
@@ -67,7 +68,7 @@ class ApiController extends Controller {
 
         if ($data !== null) $responseData['data'] = $data;
 
-        return $this->setStatusCode(200)->respond($responseData);
+        return $this->respond($responseData);
     }
 
     /**

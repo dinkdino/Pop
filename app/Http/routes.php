@@ -12,7 +12,9 @@
 */
 
 Route::group(['prefix' => 'api/v1'], function() {
-    Route::post('register', 'AuthController@register');
-    Route::post('login', 'AuthController@login');
+    Route::post('register', 'Api\AuthController@register');
+    Route::post('login', 'Api\AuthController@login');
+
+    Route::resource('products', 'Api\ProductsController');
 });
 
